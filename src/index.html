@@ -11,38 +11,17 @@
         <div class="title-left">Hostel Complaint Management System</div>
         <div class="title-right">BITS Pilani</div>
     </header>
-    <div id="google-signin-button" class="google-signin-button">Sign in with Google</div>
+
+    <button id="google-signin-button" class="google-signin-button">
+     Sign in with Google
+</button>
+
     <footer>
         Made with ❤️ by CONDOM
     </footer>
+
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script>
-        function onSignIn(googleUser) {
-            var profile = googleUser.getBasicProfile();
-            console.log('ID: ' + profile.getId());
-            console.log('Name: ' + profile.getName());
-            console.log('Image URL: ' + profile.getImageUrl());
-            console.log('Email: ' + profile.getEmail());
-            // Redirect to GitHub after sign-in
-            window.location.href = 'https://github.com';
-        }
+    <script src="scripts.js"></script>
 
-        function initGoogleAuth() {
-            gapi.load('auth2', function() {
-                gapi.auth2.init({
-                    client_id: '365690865739-3mf2s21thpv3kn2c1c3nit5496h0cjns.apps.googleusercontent.com'
-                }).then(function() {
-                    var auth2 = gapi.auth2.getAuthInstance();
-                    document.getElementById('google-signin-button').addEventListener('click', function() {
-                        auth2.signIn().then(onSignIn);
-                    });
-                });
-            });
-        }
-
-        window.onload = function() {
-            initGoogleAuth();
-        };
-    </script>
 </body>
 </html>

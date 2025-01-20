@@ -85,3 +85,31 @@ footer {
     position: absolute;
     bottom: 0;
 }
+main {
+    margin-top: 100px;
+    width: 80%;
+    max-width: 600px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 10px;
+}
+input, textarea, button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+button {
+    margin-top: 20px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #357ae8;
+}
